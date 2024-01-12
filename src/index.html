@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,68 @@
     <link rel="stylesheet" href="./scss/styles.css">
 
 </head>
+
 <body>
-    <header>
-        <h1>Hello World</h1>
+    <header class="app-header">
+        <div class="header-content">
+            <h1 class="title">Stock Ticker API</h1>
+            <p class="tagline">search for a stock and displaying data</p>
+        </div>
     </header>
 
 
-    <script type="module" src="js/index.js"></script>
+
+    <main>
+        <form id="search" class="search-api">
+            <ul class="categories">
+                <li class="category subheading">
+                    <h3>Category Search</h3>
+                </li>
+                <li class="category">
+                    <label for="people">people</label
+              ><input id="people" type="radio" name="category" value="people" checked />
+            </li>
+            <li class="category">
+              <label for="planets">planets</label
+              ><input id="planets" type="radio" name="category" value="planets" />
+            </li>
+            <li class="category">
+              <label for="films">films</label><input id="films" type="radio" name="category" value="films" />
+                </li>
+                <li class="category">
+                    <label for="species">species</label
+              ><input id="species" type="radio" name="category" value="species" />
+            </li>
+            <li class="category">
+              <label for="vehicles">vehicles</label
+              ><input id="vehicles" type="radio" name="category" value="vehicles" />
+            </li>
+            <li class="category">
+              <label for="ships">star ships</label
+              ><input id="ships" type="radio" name="category" value="ships" />
+            </li>
+            <li class="category search-term">
+                  <div class="control">  <label for="searchTerm">people</label>
+                    <input id="searchTerm" type="text" placeholder="ex: luke skywalker" required>
+                    </div>
+
+                    <button>search</button></div>
+
+                </li>
+
+            </ul>
+
+        </form>
+
+
+        <aside id="results" class="results">
+
+        </aside>
+
+
+    </main>
+
+    <script src="js/index.js" type="module"></script>
 </body>
+
 </html>
